@@ -4,7 +4,7 @@
 }
 
  html {
-    background: #ffffff;
+    background: powderblue;
     font-family: 'TwistingHaunt';
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: powderblue;
     border: solid;
     border-color: #000000;
  }
@@ -63,13 +63,13 @@ header {
      display: inline-block; /*this is why that above font thing exists. inline-block is weird. EC */
  }
  nav a.selected, nav a:hover {
-     background-color: #E7E7E7;
+     background-color: #5acefc;
      color: #000000;
      font-weight: bold;
  }
  
  nav {
-     background-color: #ffffff;
+     background-color: powderblue;
      border-top: solid;
      border-color: #000000;
  }
@@ -109,7 +109,7 @@ header {
  }
  
  div.text-container {
-     background-color: #ffffff;
+     background-color: powderblue;
      padding: 50px;
      padding-bottom: 15em;
      line-height: 1.65em;
@@ -129,7 +129,7 @@ header {
      padding-bottom: 1em;
  }
  footer {
-    background-color: #ffffff;
+    background-color: powderblue;
      color: #000000;
      border: solid;
      border-top: none;
