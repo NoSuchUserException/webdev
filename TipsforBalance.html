@@ -1,80 +1,60 @@
 <!DOCTYPE html>
-<html lang=EN>
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title> DND </title>
-        
-<link rel="stylesheet" type="text/css" href="MainStyle.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tips For Maintaining a Healthy Balance</title>
+        <h1>Tips For Maintaining a Healthy Balance</title>
 
- </head>
-     <ul>
-  <li><a href="WorkLifeHome.html">Home</a></li>
-  <li><a href="TipsforBalance.html">Tips</a></li>
-  <li><a href="NeedAdvice.html">Need Advice</a></li>
-</ul>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" type="text/css" href="css/tips.css" />
+
+        <script src="js/tips.js"></script>
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+
+        <div class="head">
+            <button onclick="window.location.href = 'index.html';">Home</button>
+            <button onclick="window.location.href = 'TipsforBalance.html';">Tips</button>
+            <button onclick="window.location.href = 'NeedAdvice.html';">Need Advice</button>
+            <button onclick="window.location.href = 'about.html';">About Us</button><br/><br/>
+        </div>
+    </head>
     
     <body>
-        <h2 >Tips for Maintaining a Healthy Balance</h2>
+        <p>Click the tip buttons below to learn how you can better yourself professionally.</p>
+        <div class="tab">
+            <button class="tablinks" onclick="openCharacter(event, 'Tip 1')" id="defaultOpen">Tip 1</button>
+            <button class="tablinks" onclick="openCharacter(event, 'Tip 2')">Tip 2</button>
+            <button class="tablinks" onclick="openCharacter(event, 'Tip 3')">Tip 3</button>
+            <button class="tablinks" onclick="openCharacter(event, 'Tip 4')">Tip 4</button>
+        </div>
 
+        <div id="Tip 1" class="tabcontent">
+            <h3>Tip 1</h3>
+            <p style="text-align: center"> 
+            <img src="https://img.business.com/rc/816x500/aHR0cHM6Ly93d3cuYnVzaW5lc3MuY29tL2ltYWdlcy9jb250ZW50LzVjZi8wNGM1NDdiNDM3NGQ5NzM4YjQ1NzEvMC04MDAt?_ga=2.33676257.1717097557.1588099461-1456245465.1588099461" alt="Sleeping" width="900" height="600"><br/>Get enough sleep. Eight hours of sleep is the recommended amount of time to accumulate since you're more prone to make mistakes if you're sleep deprived. Also lack of sleep causes stress. Getting enough sleep at night will make you feel more refreshed and ready to work the next day.</p>    
+        </div>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCharacter(event, 'Tip 1')" id="defaultOpen">Tip 1</button>
-  <button class="tablinks" onclick="openCharacter(event, 'Tip 2')">Tip 2</button>
-  <button class="tablinks" onclick="openCharacter(event, 'Tip 3')">Tip 3</button>
-  <button class="tablinks" onclick="openCharacter(event, 'Tip 4')">Tip 4</button>
-  
-</div>
+        <div id="Tip 2" class="tabcontent">
+            <h3>Tip 2</h3>
+            <p style="text-align: center"> <img src="https://steemitimages.com/DQmY75SEFFZxE8HxDKe9LkozpCaEcv1ZvzdAyQjonzvsBM5/runtime.png" alt="People climbing the clock stairs" width="752" height="353"><br/>Manage your time wisely. Plan ahead for the things you know are going to happen to you that way you feel more ready. Most professional businessmen usually keep a planner with things that they know that they got to do for that day. TIME IS MONEY.</p>  
+        </div>
 
-<div  id="Tip 1" class="tabcontent">
-  <h3>Tip 1</h3>
- <p   style="text-align: center"  ;  > <img f src="" alt="Put a picture here" width="250" height="300" >Get enough sleep.<br>Add more info</p>
-     
-    
-</div>
+        <div id="Tip 3" class="tabcontent">
+            <h3>Tip 3</h3>
+            <p><img src="https://www.netclipart.com/pp/m/34-345971_14-cliparts-for-free-download-exercise-clipart-and.png" alt="Kids exercising" width="920" height="765"><br/>Exercise is the most important of maintaining a healthy life. It keeps you energized and motivated. It doesn't matter what type of exercise you do, all that matters is that you get enough of it.</p>
+        </div>
 
-<div id="Tip 2" class="tabcontent">
-  <h3>Tip 2</h3>
-  <p style="text-align: center"> <img src="" alt="Put picture here" width="214" height="300"> Manage your time wisely.<br>Add more info</p> 
-   
-   
-</div>
-
-<div id="Tip 3" class="tabcontent">
-  <h3>Tip 3</h3>
-  <p><img src="" alt="Put picture here" width="200" height="300">Exercise.<br>add more info here</p>
-    
-</div>
-<div id="Tip 4" class="tabcontent">
-  <h3>Tip 4</h3>
-  <p><img src="" alt="Put picutre here" width="200" height="350">Put yourself first.<br>add more info</p>
-    
-    
-</div>
-
-<script>
-function openCharacter(evt, characterName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(characterName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
- <script>
- function goBack() {
-     window.history.back();
-         }
-</script>
+        <div id="Tip 4" class="tabcontent">
+            <h3>Tip 4</h3>
+            <p><img src="https://www.collinsmcnicholas.ie/wp-content/uploads/2017/09/Blog-Image.png" alt="Putting yourself first" width="800" height="450"><br/>Put yourself first, and what I mean by that is you should be proactive. You need to know how to take care of yourself before you can take care of others. You got to know how to live independently. </p>  
+        </div>
     </body>
 </html>

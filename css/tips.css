@@ -1,0 +1,23 @@
+body {
+  background-color: #00BFFF;
+}
+h1 {
+  color: #D3F0E8;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: yellow;
+  font-family: courier;
+  font-size: 30px;
+}
+button {
+  background-color: #D601EE;
+  border: none;
+  color: #01EEE6;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
