@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> DND </title>
+        
+<link rel="stylesheet" type="text/css" href="MainStyle.css" />
+
+ </head>
+     <ul>
+  <li><a href="WorkLifeHome.html">Home</a></li>
+  <li><a href="TipsforBalance.html">Tips</a></li>
+  <li><a href="NeedAdvice.html">Need Advice</a></li>
+</ul>
+    
+    <body>
+        <h2 >Tips for Maintaining a Healthy Balance</h2>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCharacter(event, 'Tip 1')" id="defaultOpen">Tip 1</button>
+  <button class="tablinks" onclick="openCharacter(event, 'Tip 2')">Tip 2</button>
+  <button class="tablinks" onclick="openCharacter(event, 'Tip 3')">Tip 3</button>
+  <button class="tablinks" onclick="openCharacter(event, 'Tip 4')">Tip 4</button>
+  
+</div>
+
+<div  id="Tip 1" class="tabcontent">
+  <h3>Tip 1</h3>
+ <p   style="text-align: center"  ;  > <img f src="" alt="Put a picture here" width="250" height="300" >Get enough sleep.<br>Add more info</p>
+     
+    
+</div>
+
+<div id="Tip 2" class="tabcontent">
+  <h3>Tip 2</h3>
+  <p style="text-align: center"> <img src="" alt="Put picture here" width="214" height="300"> Manage your time wisely.<br>Add more info</p> 
+   
+   
+</div>
+
+<div id="Tip 3" class="tabcontent">
+  <h3>Tip 3</h3>
+  <p><img src="" alt="Put picture here" width="200" height="300">Exercise.<br>add more info here</p>
+    
+</div>
+<div id="Tip 4" class="tabcontent">
+  <h3>Tip 4</h3>
+  <p><img src="" alt="Put picutre here" width="200" height="350">Put yourself first.<br>add more info</p>
+    
+    
+</div>
+
+<script>
+function openCharacter(evt, characterName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(characterName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+ <script>
+ function goBack() {
+     window.history.back();
+         }
+</script>
+    </body>
+</html>
